@@ -16,9 +16,15 @@ cd kubernetes
 kubectl apply -f app_deployment.yaml
 ```
 
-to build and push image to your repo
+## build and push image to your repo
 
 ```sh
 cd backend
 docker build . -t <repo>:<tag>
+```
+
+### run as docker container
+
+```sh
+docker run -p 5000:5000 -d harishgopi/password_generator:latest
 ```
