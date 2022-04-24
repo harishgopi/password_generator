@@ -23,7 +23,7 @@ cd backend
 docker build . -t <repo>:<tag>
 ```
 
-### run as docker container
+## run as docker container
 
 ```sh
 docker run -p 5000:5000 -d harishgopi/password_generator:latest
